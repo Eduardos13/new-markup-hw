@@ -42,7 +42,7 @@ button {
 
 .container {
   max-width: 1128px;
-  /* width: 100%; */
+  width: 100%;
   padding-right: 156px;
   padding-left: 156px;
   border: 2px red solid;
