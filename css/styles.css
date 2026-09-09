@@ -7,7 +7,6 @@ body {
 ul {
   list-style: none;
 }
-
 p,
 h1,
 h2,
@@ -45,7 +44,7 @@ button {
   width: 100%;
   padding-right: 156px;
   padding-left: 156px;
-  border: 2px red solid;
+  /* border: 2px red solid; */
 }
 
 /* ==================  */
@@ -111,7 +110,14 @@ button {
 /* =========HERO=========  */
 
 .hero {
-  background-color: #2e2f42;
+  /* background-color: #2e2f42; */
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
+    url(../images/hero-img@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
   display: flex;
@@ -121,6 +127,11 @@ button {
 }
 
 .hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
 }
 
 .hero-title {
@@ -131,7 +142,6 @@ button {
   text-align: center;
   color: #ffffff;
   max-width: 496px;
-  margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -146,7 +156,6 @@ button {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 16px 32px;
-  margin-left: calc(636px - 472px);
 }
 
 /* ==================  */
@@ -169,6 +178,19 @@ button {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.goal-item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #8e8f99;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  padding: 24px 100px;
+  /* width: 264px;
+  height: 112px; */
 }
 
 .goals-title {
@@ -194,6 +216,8 @@ button {
   padding-top: 120px;
   padding-bottom: 120px;
   margin-bottom: 120px;
+  width: 100%;
+  max-width: 1440px;
 }
 
 .our-team-title {
@@ -243,7 +267,34 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
-  margin: 0 0 32px 0;
+  margin: 0 0 8px 0;
+}
+
+.soc-list {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.soc-link {
+  background-color: #4d5ae5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.soc-link:hover {
+  background-color: #31d0aa;
+}
+
+.soc-icon {
+  fill: #f4f4fd;
 }
 
 /* ==================  */
@@ -270,6 +321,8 @@ button {
   width: 100%;
   margin: 0 auto;
   padding-left: 0;
+
+  padding-bottom: 120px;
 }
 
 .portfolio-item {
@@ -281,13 +334,24 @@ button {
   width: 100%;
 }
 
+.portfolio-info {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
 .portfolio-item-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-top: 32px;
-  margin-left: 16px;
 }
 
 .portfolio-item-text {
@@ -295,8 +359,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  margin-top: 8px;
-  margin-left: 16px;
+  margin: 0;
 }
 
 /* ==================  */
@@ -307,6 +370,20 @@ button {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -318,6 +395,44 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+
+.footer-social-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.feedback-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+  background-color: #4d5ae5;
+}
+
+.feedback-btn:hover {
+  background-color: #31d0aa;
 }
 
 /* ==================  */
