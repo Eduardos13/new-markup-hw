@@ -90,6 +90,23 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  position: relative;
+}
+
+.header-nav-item:active::after {
+  content: '';
+  position: absolute;
+  display: flex;
+  margin-top: 12px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+}
+
+.header-nav-item:hover,
+.header-contacts-item:hover {
+  color: #404bbf;
 }
 
 .header-contacts-list {
@@ -156,6 +173,10 @@ button {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 16px 32px;
+}
+
+.hero-btn:hover {
+  background-color: #404bbf;
 }
 
 /* ==================  */
@@ -290,7 +311,7 @@ button {
   border-radius: 50%;
 }
 .soc-link:hover {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 .soc-icon {
@@ -432,6 +453,10 @@ button {
 }
 
 .feedback-btn:hover {
+  background-color: #31d0aa;
+}
+
+.footer-soc-link:hover {
   background-color: #31d0aa;
 }
 
