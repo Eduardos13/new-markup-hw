@@ -89,8 +89,8 @@ img {
   color: #4d5ae5;
 }
 
-.header-nav {
-}
+/* .header-nav {
+} */
 
 .header-nav-list {
   display: flex;
@@ -196,8 +196,8 @@ img {
 
 /* ========OUR_GOALS==========  */
 
-.our-goals {
-}
+/* .our-goals {
+} */
 
 .goals-list {
   display: flex;
@@ -335,9 +335,9 @@ img {
 
 /* ========PORTFOLIO==========  */
 
-.portfolio {
-  /* width: 100%; */
-}
+/* .portfolio {
+  width: 100%;
+} */
 
 .portfolio-title {
   font-weight: 700;
