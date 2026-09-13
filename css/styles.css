@@ -62,6 +62,7 @@ img {
 /* =========HEADER=========  */
 
 .header {
+  padding: 24px 0;
 }
 
 .header-wrapper {
@@ -94,6 +95,7 @@ img {
 .header-nav-list {
   display: flex;
   gap: 40px;
+  padding-left: 0;
 }
 
 .header-nav-item {
@@ -122,6 +124,7 @@ img {
 .header-contacts-list {
   display: flex;
   gap: 40px;
+  padding-left: 0;
 }
 
 .header-contacts-item {
@@ -447,6 +450,7 @@ img {
 
 .footer-logo {
   color: #ffffff;
+  margin-right: 0;
 }
 
 .footer-text {
@@ -470,6 +474,7 @@ img {
   justify-content: center;
   align-items: flex-start;
   gap: 16px;
+  margin-right: 80px;
 }
 
 .feedback-btn {
@@ -496,6 +501,33 @@ img {
 
 .footer-soc-link:hover {
   background-color: #31d0aa;
+}
+
+.footer-feedback {
+  display: flex;
+  gap: 24px;
+}
+
+.feedback-form {
+  width: 264px;
+  background-color: transparent;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-bottom: 8px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  width: calc(260px - 16px);
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+
+.feedback-form::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 
 /* ==================  */
