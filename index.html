@@ -16,9 +16,7 @@
   <body>
 
     <header class="header">
-
       <div class="container header-wrapper">
-
         <div class="nav-wrapper">
           <a class="logo" href="/"><span class="logo-span">Web</span>Studio</a>
           <nav class="header-nav">
@@ -35,7 +33,6 @@
             </ul>
           </nav>
         </div>
-  
         <ul class="header-contacts-list">
           <li class="header-contacts-item">
             <a href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -44,30 +41,22 @@
             <a href="tel:+110001111111">+11 (000) 111-11-11</a>
           </li>
         </ul>
-
       </div>
-
     </header>
 
     <main>
 
       <section class="hero">
-
         <div class="container">
-
           <div class="hero-wrapper">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
             <button class="hero-btn">Order Service</button>
           </div>
-
         </div>
-
       </section>
 
       <section class="our-goals">
-
         <div class="container">
-
             <h2 class="our-goals-title visually-hidden">Hidden Title</h2>
             <ul class="goals-list">
               <li class="goals-item">
@@ -119,15 +108,11 @@
                 </p>
               </li>
             </ul>
-
         </div>
-
       </section>
 
       <section class="our-team">
-
         <div class="container">
-
           <h2 class="our-team-title">Our Team</h2>
           <ul class="our-team-list">
             <li class="our-team-item">
@@ -270,15 +255,11 @@
               </ul>
             </li>
           </ul>
-
         </div>
-
       </section>
 
       <section class="portfolio">
-
         <div class="container">
-
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
@@ -349,17 +330,12 @@
               </div>
             </li>
           </ul>
-
         </div>
-
       </section>
-
     </main>
 
     <footer class="footer">
-
       <div class="container">
-
         <div class="footer-content">
           <div class="footer-info">
             <a class="logo footer-logo" href="/"><span class="logo-span">Web</span>Studio</a>
@@ -368,7 +344,6 @@
             digital marketing & growth solutions.
             </p>
           </div>
-
           <div class="footer-social">
             <h3 class="footer-social-title">Social media</h3>
             <ul class="soc-list">
@@ -402,7 +377,6 @@
               </li>
             </ul>
           </div>
-
           <div class="footer-feedback">
             <input class="feedback-form" type="text" name="feedback" placeholder="E-mail">
             <button class="feedback-btn" type="button">
@@ -412,12 +386,65 @@
               </svg>
             </button>
           </div>
-
-
         </div>
-
       </div>
-
     </footer>
+
+    <div class="backdrop visually-hidden">
+      <div class="modal">
+        <button class="modal-close" type="button">
+          <svg class="icon-cole" width="8px" height="8px">
+            <use href="./images/icons.svg#cross-icon"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="form-field">
+            <label class="modal-lable" for="user-name">Name</label>
+            <div class="input-icon-wrap">
+              <input class="modal-input" type="text" name="user-name" id="user-name" required>
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#person-icon"></use>
+             </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="modal-lable" for="user-phone">Phone</label>
+            <div class="input-icon-wrap">
+              <input class="modal-input" type="tel" name="user-phone" id="user-phone" required>
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#phone-icon"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="modal-lable" for="user-email">Email</label>
+            <div class="input-icon-wrap">
+              <input class="modal-input" type="email" name="user-email" id="user-email" required>
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#email-icon"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="modal-lable" for="user-comment">Comment</label>
+            <textarea class="modal-text" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
+          </div>
+          <div class="form-field">
+            <input class="form-check visually-hidden" type="checkbox" name="policy" id="policy" value="true">
+            <label for="policy" class="check-lable">
+              <span>
+                <svg class="check-icon" width="10" height="8">
+                <use href="./images/icons.svg#check-icon"></use>
+              </svg>
+            </span>
+              I accept the terms and conditions of the <a href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="submit-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
   </body>
 </html>
