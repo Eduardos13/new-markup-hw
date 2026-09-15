@@ -217,26 +217,67 @@ img {
 
 /* ========OUR_GOALS==========  */
 
-/* .our-goals {
-} */
+.our-goals {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .our-goals {
+    padding-top: 96px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .our-goals {
+    padding-top: 120px;
+  }
+}
 
 .goals-list {
   display: flex;
-  gap: 24px;
-  margin-bottom: 120px;
+  flex-direction: column;
+  gap: 72px;
   margin-top: 0;
   padding-left: 0;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .goals-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .goals-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
 .goals-item {
-  width: calc(100% - 3 * 24px);
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .goals-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .goals-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+}
+
 .goal-item-icon {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 
@@ -244,22 +285,61 @@ img {
   background-color: #f4f4fd;
   border-radius: 4px;
   padding: 24px 100px;
-  /* width: 264px;
-  height: 112px; */
+}
+
+@media screen and (min-width: 1158px) {
+  .goal-item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8e8f99;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    padding: 24px 100px;
+  }
 }
 
 .goals-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .goals-title {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .goals-title {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .goals-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
 }
 
 .goals-text {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+@media screen and (min-width: 1158px) {
+  .goals-text {
+    font-weight: 400;
+  }
 }
 
 /* ==================  */
