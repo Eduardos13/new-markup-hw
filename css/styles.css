@@ -292,12 +292,29 @@ img {
   justify-content: center;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
+      url(../images/hero-phone@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
       url(../images/hero-tablet@1x.jpg);
     padding-top: 112px;
     padding-bottom: 112px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
+        url(../images/hero-tablet@2x.jpg);
+    }
   }
 }
 
@@ -310,6 +327,14 @@ img {
     width: 1440px;
     max-width: 1440px;
     margin: 0 auto;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
+        url(../images/hero-desktop@2x.jpg);
+    }
   }
 }
 
